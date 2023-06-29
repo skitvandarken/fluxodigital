@@ -1,0 +1,52 @@
+.footer {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:white
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-contact {
+  margin-bottom: 20px;
+}
+
+.footer-contact-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-contact-info {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-contact-toggle {
+  margin-top: 10px;
+}
+
+.footer-contact-toggle .uk-accordion-content {
+  padding: 0;
+}
+
+.footer-contact-toggle .uk-accordion-title {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}

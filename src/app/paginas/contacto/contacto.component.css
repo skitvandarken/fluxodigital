@@ -1,0 +1,18 @@
+.icone {
+  color:red
+}
+
+.fundo {
+
+  background-color: red;
+
+}
+.texto {
+  color:black !important
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding-top: 24px;
+}
