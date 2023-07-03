@@ -1,46 +1,86 @@
 <app-navbar></app-navbar>
 <app-slider></app-slider>
 
-
 <div class="uk-container">
   <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
     <div>
         <div class="uk-card uk-card uk-card-body">
           <p class=icone><span uk-icon="icon: world; ratio: 2"></span></p>
-            <h3 class="uk-card-title">Desenvolvimento Web e Programação</h3>
+            <h3 class="uk-card-title"><b>Desenvolvimento Web e Programação</b></h3>
             <p>- Criacao de Websites <br> - Criação de Websites de comércio Electrónico <br> - Criacao de Aplicativos(APPs) </p>
         </div>
-        <button class="uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
+        <button routerLink="/servicos" class="uk-border-pill uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
 
     </div>
     <div>
         <div class="uk-card uk-card uk-card-body">
           <p class="icone"><span uk-icon="icon: play-circle; ratio: 2"></span></p>
-            <h3 class="uk-card-title">Audiovisual e Streaming</h3>
+            <h3 class="uk-card-title"><b>Audiovisual e Streaming</b></h3>
             <p> - LiveStreaming e Videoconferências Produção AudioVisual (Filmes, spots, documentaries, shorts)
               <br> -  Designgrafico <br> - Gestao de redes sociais
             </p>
         </div>
 
-          <button class="uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
+          <button routerLink="/servicos" class="uk-border-pill uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
 
     </div>
     <div>
         <div class="uk-card uk-card uk-card-body">
           <p class="icone"><span uk-icon="icon: server; ratio: 2"></span></p>
-            <h3 class="uk-card-title">Gestão de Infraestruturas de TI</h3>
+            <h3 class="uk-card-title"><b>Gestão de Infraestruturas de TI</b></h3>
             <p> - Ligações ponto-a-ponto <br> - Redes estruturadas <br> - Configuração e administração de servidores</p>
         </div>
 
-        <button class="uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
+        <button routerLink="/servicos" class="uk-border-pill uk-button-danger uk-button-default uk-button-large">SAIBA MAIS</button>
 
     </div>
 </div>
     </div>
 
+<!--Hospedagem-->
+
+
+<div class="uk-container uk-margin-large-top">
+  <p class="uk-text-center"><span uk-icon="icon: database; ratio: 3.5"></span> </p>
+  <h1 class="uk-heading-small uk-text-center" style="color:#F0506E"><b>HOSPEDAGEM WEB ILIMITADA</b></h1>
+<h3 class="uk-text-center">Temos a melhor Hospedagem Web com cPanel e Plataforma NVMe em Núvem premiada  </h3>
+<p class="uk-text-center">Conheça os nossos Pacotes SOFT de Hospedagem desenhados para todos os bolsos</p>
+
+</div>
+
+
+<div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top uk-match-height-all" uk-grid>
+  <div>
+      <div class="uk-background-muted uk-padding ">
+
+        <h3 class="uk-text-center"><b>Soft Básico</b></h3>
+        <p>10 GB Espaço em SSD <br> 30 GB Tráfego Mensal <br> 5 Contas de Email <br> 3 Base de dados <br> <b>a partir de 18.000 Kz/ano</b></p>
+        <a href="https://softechost.com/cart.php?a=add&pid=2" target="_blank"><button class="uk-button uk-button-danger uk-button-default uk-border-pill" >SOLICITAR AGORA</button> </a>
+
+        <h3><b>Soft Clássico</b></h3>
+        <p>30 GB Espaço em SSD <br> 50 GB Tráfego Mensal <br> 30 Contas de Email <br> 6 Base de dados<br><b>a partir de 30.000 Kz/ano</b>
+        </p>
+        <a href="https://softechost.com/cart.php?a=add&pid=5" target="_blank"><button  class="uk-button uk-button-danger uk-button-default uk-border-pill" >SOLICITAR AGORA</button></a>
+
+
+        <h3><b>Soft Ilimitado</b></h3>
+        <p>Espaço em SSD <br> Tráfego Mensal Ilimitado <br> Contas de Email Ilimitadas <br> 50 Base de dados <b><br> partir de 18.000 Kz/ano</b></p>
+        <a  href="https://softechost.com/cart.php?a=add&pid=5" target="_blank"><button routerLink="https://softechost.com/cart.php?a=add&pid=5" class="uk-button uk-button-danger uk-button-default uk-border-pill">SOLICITAR AGORA</button></a>
+
+
+
+      </div>
+  </div>
+  <div>
+      <div class="uk-background uk-padding uk-light"><h3 style="color:#F0506E">Serviço oferecido em parceria com a <a style="color: black;" href="https://softechost.com/">SoftecHost</a></h3></div>
+      <img class="uk-padding" src="/assets/cpanel_banner.png" alt="" style="paddin">
+      <a href="https://softechost.com/"><button class="uk-button uk-button-danger uk-button-medium uk-border-pill uk-button-priary margin-large-top">VER MAIS DETALHES</button></a>
+    </div>
+</div>
+
 <!-- Vídeo  -->
 <div class="uk-container">
-  <h1 class="uk-heading-small uk-text-center" style="padding-top: 8px;">Somos confiados por quem busca por Excelência</h1>
+  <h1 class="uk-heading-small uk-text-center uk-margin-large-top">Somos confiados por quem busca por Excelência</h1>
 <h3 class="uk-text-center">Veja alguns casos de sucesso</h3>
 </div>
 
@@ -68,22 +108,22 @@
     <h3 class="uk-text-center">Conheça alguns dos nossos clientes</h3>
 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-medium-top" uk-grid>
   <div>
-      <div class="uk-background uk-padding"><img src="/assets/clientes/cliente-1.png" alt=""></div>
+      <div class="uk-background uk-padding"><img class="uk-border-rounded" src="/assets/clientes/cliente-1.png" alt=""></div>
   </div>
   <div>
-      <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-2.png" alt=""></div>
+      <div class="uk-background uk-padding uk-light"><img class="uk-border-rounded" src="/assets/clientes/cliente-2.png" alt=""></div>
   </div>
   <div>
-      <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-3.png" alt=""></div>
+      <div class="uk-background uk-padding uk-light"><img class="uk-border-rounded" src="/assets/clientes/cliente-3.png" alt=""></div>
   </div>
   <div>
-    <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-4.png" alt=""></div>
+    <div class="uk-background uk-padding uk-light"><img class="uk-border-rounded" src="/assets/clientes/cliente-4.png" alt=""></div>
 </div>
 <div>
-  <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-5.png" alt=""></div>
+  <div class="uk-background uk-padding uk-light"><img class="uk-border-rounded" src="/assets/clientes/cliente-5.png" alt=""></div>
 </div>
 <div>
-  <div class=" uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-6.png" alt=""></div>
+  <div class=" uk-background uk-padding uk-light"><img class="uk-border-rounded" src="/assets/clientes/cliente-6.png" alt=""></div>
 </div>
 
 
@@ -101,7 +141,7 @@
       <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-9.png" alt=""></div>
   </div>
   <div>
-    <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-10.png" alt=""></div>
+    <div class="uk-background uk-padding uk-light"><img  src="/assets/clientes/cliente-10.png" alt=""></div>
 </div>
 <div>
   <div class="uk-background uk-padding uk-light"><img src="/assets/clientes/cliente-11.png" alt=""></div>
@@ -119,7 +159,7 @@
 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-small-top" uk-grid>
   <div class=" uk-padding">
   <p class="uk-text-center texto">Faça a escolha mais acertada e junta-te à outras organizações que optaram pela excelência</p>
-<p class="uk-text-center"><button class="uk-button-danger uk-button-default uk-button-large">CONTRATE-NOS</button></p>
+<p class="uk-text-center"><button routerLink="/contacto" class="uk-border-pill uk-button-danger uk-button-default uk-button-large">CONTRATE-NOS</button></p>
 </div>
 </div>
 
