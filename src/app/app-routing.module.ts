@@ -10,6 +10,7 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
 import { ServicosComponent } from './paginas/servicos/servicos.component';
+import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
 
 const routes: Routes = [
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'formulario', component: FormularioComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'slider', component: SliderComponent },
+  { path: 'whatsapp', component: WhatsappComponent },
   //páginas
   { path: 'acerca', component: AcercaComponent },
   { path: 'contacto', component: ContactoComponent },

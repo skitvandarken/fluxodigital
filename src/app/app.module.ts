@@ -13,6 +13,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { FormularioComponent } from './layout/formulario/formulario.component';
 import { ClientesComponent } from './layout/clientes/clientes.component';
 import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
+import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
     FooterComponent,
     FormularioComponent,
     ClientesComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    WhatsappComponent,
   ],
   imports: [
     BrowserModule,
