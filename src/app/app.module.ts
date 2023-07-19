@@ -14,6 +14,8 @@ import { FormularioComponent } from './layout/formulario/formulario.component';
 import { ClientesComponent } from './layout/clientes/clientes.component';
 import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
 import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

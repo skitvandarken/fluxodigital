@@ -7,32 +7,47 @@
 
 <div class="uk-container">
   <h2>Envie-nos uma mensagem</h2>
-  <form class="uk-form-stacked">
+  <form [formGroup]="form" class="uk-form-stacked" (submit)="Submeter()" #formDir="ngForm">
     <div class="uk-margin">
       <label class="uk-form-label" for="nome">Nome</label>
       <div class="uk-form-controls">
-        <input class="uk-input" id="nome" type="text" placeholder="Digite seu nome">
+        <input formControlName="nome" class="uk-input" id="nome" type="text" placeholder="Digite seu nome">
+      </div>
+
+      <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="nome.errors?.['required']">este campo é obrigatório</p>
       </div>
     </div>
 
     <div class="uk-margin">
       <label class="uk-form-label" for="email">Email</label>
       <div class="uk-form-controls">
-        <input class="uk-input" id="email" type="email" placeholder="Digite seu email">
+        <input formControlName="email" class="uk-input" id="email" type="email" placeholder="Digite seu email">
+      </div>
+      <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="email.errors?.['required']">este campo é obrigatório</p>
+          <p *ngIf="email.errors?.['email']">email inválido</p>
       </div>
     </div>
 
     <div class="uk-margin">
       <label class="uk-form-label" for="assunto">Assunto</label>
       <div class="uk-form-controls">
-        <input class="uk-input" id="assunto" type="text" placeholder="Digite o assunto">
+        <input formControlName="assunto" class="uk-input" id="assunto" type="text" placeholder="Digite o assunto">
+      </div>
+      <div *ngIf="assunto.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="assunto.errors?.['required']">este campo é obrigatório</p>
       </div>
     </div>
 
     <div class="uk-margin">
       <label class="uk-form-label" for="mensagem">Mensagem</label>
       <div class="uk-form-controls">
-        <textarea class="uk-textarea" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+        <textarea formControlName="messagem"  class="uk-textarea" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+      </div>
+
+      <div *ngIf="messagem.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="messagem.errors?.['required']">este campo é obrigatório</p>
       </div>
     </div>
 
