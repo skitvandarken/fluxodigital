@@ -2,13 +2,15 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {cors:true});
-
+  const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'http://localhost:4200', // Domínio do seu aplicativo Angular
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: 'Content-Type, Accept',
-    })
-  await app.listen(3333);
+    origin:'http://localhost:4200',
+    methods:['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Custom-Header'],
+    exposedHeaders: ['Content-Length', 'X-Custom-Header'],
+    credentials: true,
+  });
+
+  await app.listen(3000);
 }
 bootstrap();

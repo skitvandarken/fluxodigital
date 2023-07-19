@@ -26,6 +26,7 @@
       </div>
       <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
           <p *ngIf="email.errors?.['required']">este campo é obrigatório</p>
+          <p *ngIf="email.errors?.['email']">email inválido</p>
       </div>
     </div>
 

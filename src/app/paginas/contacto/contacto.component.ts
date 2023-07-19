@@ -16,7 +16,7 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       nome: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       assunto: new FormControl('', [Validators.required]),
       messagem: new FormControl('', [Validators.required]),
     })    
@@ -41,13 +41,11 @@ export class ContactoComponent implements OnInit {
 
   Submeter(){
     if(this.form.invalid) return;
-    const file = new FormData()
-    file.append("nome", this.form.controls["nome"].value),
-    file.append("email", this.form.controls["email"].value),
-    file.append("assunto", this.form.controls["assunto"].value),
-    file.append("messagem", this.form.controls["messagem"].value)
-  
-    return this.authdervice.EnviarEmail(file);
+    return this.authdervice.EnviarEmail(this.form.getRawValue()).subscribe(
+      (res) => {
+        alert("A sua messagem foi enviada com sucesso!")
+      }
+    );
   }
 
 

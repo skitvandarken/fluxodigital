@@ -8,8 +8,8 @@ export class EmailContactoController {
   constructor(private readonly emailContactoService: EmailContactoService) {}
 
   @Post()
-  EnviarEmail(@Body() body:{nome:string, email:string, assunto:string, messagem:string},){
-    console.log(body)
+  EnviarEmail(@Body() body:{nome:string, email:string, assunto:string, messagem:string}){
+    return this.emailContactoService.sendMail(body)
   }
 
 }

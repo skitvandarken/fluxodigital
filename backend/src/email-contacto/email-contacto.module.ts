@@ -6,11 +6,12 @@ import { MailerModule } from '@nestjs-modules/mailer'
 @Module({
   imports:[MailerModule.forRoot({
     transport:{
-      host:"smtp.gmail.com",
+      host:"mail.fluxo-digital.com",
       auth:{
-        user:"rkitoco@gmail.com",
-        pass:"yubvnnugnzijnovw",
-      }
+        user:"comercial@fluxo-digital.com",
+        pass:"fluxodigital#23",
+      },
+      port:465
     }
   })],
   controllers: [EmailContactoController],

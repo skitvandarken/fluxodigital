@@ -7,15 +7,18 @@ import { from } from 'rxjs';
 @Injectable()
 export class EmailContactoService {
   constructor(private readonly mailerService: MailerService){}
-  sendMail(){
+  sendMail(body:any){
     this.mailerService.sendMail({
-      to:"rkitoco@gmail.com",
-      from:"rkitoco@gmail.com",
-      subject:"Testando nest Mailler",
+      to:"comercial@fluxo-digital.com",
+
+      from:`${body.email}`,
+      subject:`${body.assunto}`,
       text:"Bem Vindo",
-      html:"<b>olá Rafael Kitoco</b>."
+      html:`Nome:${body.nome} <br>
+            <hr>
+            ${body.messagem} <br>`
       
     })
-    return 'email enviado'
+    return {message : 'email enviado'}
   }
 }
