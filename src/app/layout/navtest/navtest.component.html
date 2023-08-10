@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
+  <title>Collapsible Navbar Menu</title>
+</head>
+
+<body>
+  <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="#"><img class="logotop" src="assets/logos/fluxodigital-logo-red.png" alt="Logo"></a>
+    </div>
+    <div class="uk-navbar-right" style="margin-right:3%">
+      <ul class="uk-navbar-nav uk-visible@m">
+        <li><a href="#" uk-scroll="offset: 80">Início</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Serviços</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Hospedagem</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Acerca</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Contacto</a></li>
+      </ul>
+      <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-nav" uk-toggle>
+        <span uk-navbar-toggle-icon></span>
+      </a>
+    </div>
+  </nav>
+
+  <div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="#" uk-scroll="offset: 80">Início</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Serviços</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Hospedagem</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Acerca</a></li>
+        <li><a href="#" uk-scroll="offset: 80">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

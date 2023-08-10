@@ -24,11 +24,12 @@ const routes: Routes = [
   { path: 'slider', component: SliderComponent },
   { path: 'whatsapp', component: WhatsappComponent },
   //páginas
-  { path: 'acerca', component: AcercaComponent },
+  { path: 'acerca', component: AcercaComponent,},
   { path: 'contacto', component: ContactoComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'portfolio', component: PortfolioComponent },
-  { path: 'servicos', component: ServicosComponent },
+  { path: 'servicos', component: ServicosComponent, },
+
 
 
 

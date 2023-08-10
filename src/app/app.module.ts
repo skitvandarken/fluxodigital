@@ -14,6 +14,7 @@ import { FormularioComponent } from './layout/formulario/formulario.component';
 import { ClientesComponent } from './layout/clientes/clientes.component';
 import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
 import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
+import { NavtestComponent } from './layout/navtest/navtest.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
     ClientesComponent,
     PortfolioComponent,
     WhatsappComponent,
+    NavtestComponent,
   ],
   imports: [
     BrowserModule,
