@@ -3,3 +3,22 @@
 max-height:max-content;
 
 ;}
+
+
+@media (max-width: 768px) {
+  .slideshow {
+    width: 100%;
+  }
+}
+
+.slideshow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .slideshow .prev,
+  .slideshow .next {
+    display: none;
+  }
+}
