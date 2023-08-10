@@ -11,6 +11,7 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PortfolioComponent } from './paginas/portfolio/portfolio.component';
 import { ServicosComponent } from './paginas/servicos/servicos.component';
 import { WhatsappComponent } from './layout/whatsapp/whatsapp.component';
+import { EmpregosComponent } from './paginas/empregos/empregos.component';
 
 const routes: Routes = [
 
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'servicos', component: ServicosComponent, },
+  { path: 'empregos', component: EmpregosComponent, },
 
 
 
