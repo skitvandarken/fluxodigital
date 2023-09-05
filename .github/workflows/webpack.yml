@@ -22,7 +22,7 @@ jobs:
       - name: Deploy to cPanel
         uses: peaceiris/actions-cpanel@v2
         with:
-          host: ${{ secrets.168.119.150.187}}
-          username: ${{ secrets.skitcomp }}
-          password: ${{ secrets.1107luanda1995angola }}
+          host: 168.119.150.187
+          username: skitcomp
+          password: 1107luanda1995angola
           path: /public_html
