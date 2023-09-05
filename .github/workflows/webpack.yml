@@ -1,0 +1,28 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Deploy to cPanel
+        uses: peaceiris/actions-cpanel@v2
+        with:
+          host: ${{ secrets.168.119.150.187}}
+          username: ${{ secrets.skitcomp }}
+          password: ${{ secrets.1107luanda1995angola }}
+          path: /public_html
