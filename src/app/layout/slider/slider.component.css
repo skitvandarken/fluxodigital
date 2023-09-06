@@ -1,6 +1,9 @@
 .uk-slideshow-items {
 
 max-height:max-content;
+height: 10px;
+align-items: center;
+viewport-fit: contain;
 
 ;}
 
@@ -14,6 +17,8 @@ max-height:max-content;
 .slideshow {
   display: flex;
   flex-wrap: wrap;
+  object-fit: fill;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
