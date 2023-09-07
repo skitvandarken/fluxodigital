@@ -1,11 +1,10 @@
 .uk-slideshow-items {
 
-max-height:max-content;
-height: 10px;
+max-height:400px !important;
+height: 400px !important;
 align-items: center;
-viewport-fit: contain;
 
-;}
+}
 
 
 @media (max-width: 768px) {
