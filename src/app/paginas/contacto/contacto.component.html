@@ -1,24 +1,32 @@
 <app-navbar></app-navbar>
+<script>
+emailjs.send("service_janacmv","template_cixs6zb",{
+  to_name: "",
+  from_name: "",
+  message: "",
+  });
+</script>
+
 
 <div class="uk-container">
-  <h1 class="ul-heading-large" style="margin-bottom:24px; margin-top: 24px;">Contacte-nos</h1> </div>
-
-<!--Formulário-->
+  <h1 class="ul-heading-large" style="margin-bottom:24px; margin-top: 24px;">Contacte-nos</h1>
+</div>
 
 <div class="uk-container">
+  <h3>Usuários do app Piloto X <img src="assets/ic_app_logo.jpg" height="80px" width="80px"> podem solicitar aqui a remoção dos dados de suas contas também</h3>
   <h2>Envie-nos uma mensagem</h2>
-  <form class="uk-form-stacked">
+  <form id="contact-form" class="uk-form-stacked" (submit)="sendEmail($event)" >
     <div class="uk-margin">
       <label class="uk-form-label" for="nome">Nome</label>
       <div class="uk-form-controls">
-        <input class="uk-input" id="nome" type="text" placeholder="Digite seu nome">
+        <input class="uk-input" name="from_name" id="nome" type="text" placeholder="Digite seu nome">
       </div>
     </div>
 
     <div class="uk-margin">
       <label class="uk-form-label" for="email">Email</label>
       <div class="uk-form-controls">
-        <input class="uk-input" id="email" type="email" placeholder="Digite seu email">
+        <input class="uk-input" name="user_email" id="email" type="email" placeholder="Digite seu email">
       </div>
     </div>
 
@@ -32,23 +40,30 @@
     <div class="uk-margin">
       <label class="uk-form-label" for="mensagem">Mensagem</label>
       <div class="uk-form-controls">
-        <textarea class="uk-textarea" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+        <textarea class="uk-textarea" name="message" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
       </div>
     </div>
 
-
-
     <div class="uk-margin">
-      <button class="uk-button uk-button-danger uk-border-pill uk-button-large" type="submit">Enviar</button>
+      <button class="uk-button uk-button-danger uk-border-pill uk-button-large" type="submit" value="Send" >Enviar</button>
     </div>
   </form>
+  <div id="message"></div>
 </div>
 
 
-<!--Contactos e ícones-->
-
-
-<!--Contactos-->
+<div class="uk-container" *ngIf="successMessage">
+  <h1>A sua mensagem foi enviada com sucesso!</h1>
+  <p>Respenderemos o mais brevemente</p>
+</div>
 
 
 <app-footer></app-footer>
+
+<!--
+emailjs.send("service_janacmv","template_cixs6zb",{
+  to_name: "Teste",
+  from_name: "teste",
+  message: "teste",
+  });
+  -->
